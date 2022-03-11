@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-final Color greenColor = Color(0xff44b623);
-final Color lightgreenColor = Color(0xffC7FCB7).withOpacity(0.5);
+final Color greenColor = Color(0xffb5554e);
+final Color lightgreenColor = Color(0xffded26a);
+// final Color lightgreenColor = Color(0xffb5554e).withOpacity(0.5);
 final Color whiteColor = Colors.white;
 final Color blackColor = Colors.black;
 final Color? greyColor = Colors.grey[700];
 final Color lightgreyColor = Colors.grey[700]!.withOpacity(0.5);
 final Color lightredColor = Colors.red[100]!;
 
-final imageStartUrl = 'https://mungalo-b2b.freshchoice.pk/public/uploads/';
+
+
+final imageStartUrl = 'http://165.227.69.207/taqwa_b2b/public/uploads/';
 // final imageStartUrl = 'http://165.227.69.207/mangalo_b2b/public/uploads/';
-final b2CimageStartUrl = 'https://mungalo-b2c.freshchoice.pk/public/uploads/';
-final b2bBaseUrl = 'https://mungalo-b2b.freshchoice.pk/public/api';
+final b2CimageStartUrl = 'http://165.227.69.207/taqwa_b2c/public/uploads/';
+
+final b2bBaseUrl = 'http://165.227.69.207/taqwa_b2b/public/api';
 // final b2cBaseUrl = 'https://mungalo-b2c.freshchoice.pk/public/api';
-final b2cBaseUrl = 'http://165.227.69.207/zkadmin/public/api';
+final b2cBaseUrl = 'http://165.227.69.207/taqwa_b2c/public/api';
 // final b2bBaseUrl = 'http://165.227.69.207/mangalo_b2b/public/api';
 
 //! App Theme

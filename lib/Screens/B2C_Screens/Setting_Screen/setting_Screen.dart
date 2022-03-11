@@ -172,7 +172,16 @@ class SettingScreen extends StatelessWidget {
                   CircleAvatar(
                     radius: 60,
                     backgroundColor: whiteColor,
-                    backgroundImage: AssetImage('assets/Images/logo_green.png'),
+                    // backgroundImage: AssetImage('assets/Images/logo_green.png'),
+                    child: Padding(
+                      padding: EdgeInsets.all(1),
+                      child: CircleAvatar(
+                        radius: 56,
+                        backgroundColor: lightgreenColor,
+                        child: CommonWidget().customText(
+                            'TAQWA', whiteColor, 20.0, FontWeight.bold, 1),
+                      ),
+                    ),
                   ),
                   SizedBox(
                     height: 5,

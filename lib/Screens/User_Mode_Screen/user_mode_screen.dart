@@ -27,9 +27,9 @@ class UserModeScreen extends StatelessWidget {
                       children: [
                         Column(
                           children: [
-                            Center(
-                                child:
-                                    Image.asset('assets/Images/logo_green.png'))
+                            Center(child: Text('Taqwa Mart')
+                                // Image.asset('assets/Images/logo_green.png')
+                                )
                           ],
                         ),
                         Column(

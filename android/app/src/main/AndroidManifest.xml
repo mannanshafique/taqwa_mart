@@ -9,7 +9,7 @@
 <!-- End Permissions -->
 
    <application
-        android:label="Mungalo"
+        android:label="Taqwa Mart"
         android:icon="@mipmap/launcher_icon">
          <!-- Google Map Api -->
          <meta-data android:name="com.google.android.geo.API_KEY" 
