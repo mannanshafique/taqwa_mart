@@ -14,7 +14,7 @@ void main() async {
   await Firebase.initializeApp();
 
  Get.log('starting services ...');
- Get.put(InternetChecker());
+//  Get.put(InternetChecker());
 //  Get.put(NotificationService());
 
 

@@ -17,7 +17,7 @@ class RegisterScreen extends StatelessWidget {
 
   // final authController = Get.find<AuthController>();
   final String termsText =
-      'By clicking "Sign up" you are agreeing to Mungwalo\'s';
+      'By clicking "Sign up" you are agreeing to Taqwa Mart\'s';
   final TextEditingController fullNametextController = TextEditingController();
   final TextEditingController phonetextController = TextEditingController();
   final TextEditingController emailtextController = TextEditingController();

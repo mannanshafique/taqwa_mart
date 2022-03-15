@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-final Color greenColor = Color(0xffb5554e);
-final Color lightgreenColor = Color(0xffded26a);
-// final Color lightgreenColor = Color(0xffb5554e).withOpacity(0.5);
+final Color greenColor = Color(0xff8BAF3E);
+final Color lightgreenColor = Color(0xffEAA533).withOpacity(0.5);
+final Color lightgreen = Colors.green[100]!;
+// final Color lightgreen= Colors.green![200];
 final Color whiteColor = Colors.white;
 final Color blackColor = Colors.black;
 final Color? greyColor = Colors.grey[700];
 final Color lightgreyColor = Colors.grey[700]!.withOpacity(0.5);
 final Color lightredColor = Colors.red[100]!;
-
-
 
 final imageStartUrl = 'http://165.227.69.207/taqwa_b2b/public/uploads/';
 // final imageStartUrl = 'http://165.227.69.207/mangalo_b2b/public/uploads/';

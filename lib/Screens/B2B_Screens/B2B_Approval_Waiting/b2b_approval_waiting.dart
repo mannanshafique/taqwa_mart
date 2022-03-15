@@ -11,7 +11,7 @@ class WaitingApproval extends StatelessWidget {
       : super(key: key);
 
   final String waitingText =
-      'Thank you for registering with mungalo your application is being reviewed and will undergo an approval process.';
+      'Thank you for registering with Taqwa Mart, Your application is being reviewed and will undergo an approval process.';
   final String forgottext = 'Forgot Your Password ?';
 
   @override

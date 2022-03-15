@@ -412,7 +412,7 @@ class SubCategoryDetailScreen extends StatelessWidget {
                   child: Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: (imagePath == null)
-                    ? Image.asset('assets/Images/logo_green.png')
+                    ? Image.asset('assets/Images/taqwa_logo.png')
                     : GestureDetector(
                         onTap: onImageTap,
                         child: Image.network(

@@ -116,7 +116,7 @@ class CategoryView extends StatelessWidget {
                   padding: const EdgeInsets.all(5.0),
                   child: (imagePath ==
                           'http://165.227.69.207/zkadmin/public/uploads/')
-                      ? Image.asset('assets/Images/logo_green.png')
+                      ? Image.asset('assets/Images/taqwa_logo.png')
                       : Image.network(
                           imagePath,
                           fit: BoxFit.contain,

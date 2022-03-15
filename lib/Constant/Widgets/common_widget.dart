@@ -220,7 +220,7 @@ class CommonWidget {
                     },
                     child: Icon(
                       Icons.place_outlined,
-                      color: greenColor,
+                      color: blackColor,
                       size: 30,
                     ),
                   ),
@@ -251,7 +251,7 @@ class CommonWidget {
                             children: [
                               Expanded(
                                 child: CommonWidget().customText(titleText,
-                                    greenColor, 16.0, FontWeight.w400, 1),
+                                    blackColor, 16.0, FontWeight.w400, 1),
                               ),
                               CommonWidget().sizedBox(0.0, 3.0),
                               Center(

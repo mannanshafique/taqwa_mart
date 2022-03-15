@@ -205,7 +205,7 @@ class SearchScreen extends StatelessWidget {
                 child: GestureDetector(
                   onTap: onImageTap,
                   child: FadeInImage.assetNetwork(
-                    placeholder: 'assets/Images/logo_green.png',
+                    placeholder: 'assets/Images/taqwa_logo.png',
                     image: '$imagePath',
                     fit: BoxFit.cover,
                   ),

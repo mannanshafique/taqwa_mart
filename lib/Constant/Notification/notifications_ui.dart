@@ -8,7 +8,7 @@ Future<void> createNotificationsPopUp({title, description}) async {
     title: title,
     body: description,
     // bigPicture: 'asset://assets/Images/logo_green.png',
-    largeIcon: 'asset://assets/Images/logo_green.png',
+    largeIcon: 'asset://assets/Images/taqwa_logo.png',
     // notificationLayout: NotificationLayout.BigPicture,
   ));
 }

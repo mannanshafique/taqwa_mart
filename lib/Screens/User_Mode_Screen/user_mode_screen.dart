@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mangalo_app/Constant/Value/value_constant.dart';
 import 'package:mangalo_app/Constant/Widgets/common_widget.dart';
 import 'package:mangalo_app/Screens/B2B_Screens/B2B_Authentication/B2B_Login/b2b_login_screen.dart';
 import 'package:mangalo_app/Screens/B2C_Screens/OnBoarding_Screen/on_boarding_screen.dart';
@@ -27,23 +28,37 @@ class UserModeScreen extends StatelessWidget {
                       children: [
                         Column(
                           children: [
-                            Center(child: Text('Taqwa Mart')
-                                // Image.asset('assets/Images/logo_green.png')
-                                )
+                            Center(
+                              child: CommonWidget().customText(
+                                  'Select your',
+                                  greyColor!.withOpacity(0.7),
+                                  25,
+                                  FontWeight.w500,
+                                  1),
+                            ),
+                            Center(
+                              child: CommonWidget().customText(
+                                  'User mode screen',
+                                  greyColor!.withOpacity(0.7),
+                                  25,
+                                  FontWeight.w500,
+                                  1),
+                            ),
                           ],
                         ),
                         Column(
                           children: [
                             //!------------------Household Buttton
                             CommonWidget().button(
-                                Colors.green, Colors.white, 'Household', () {
+                                greenColor, whiteColor, 'Household', () {
                               Get.to(() => OnBoardingScreen());
                             }, EdgeInsets.symmetric(vertical: 12), 22.0,
                                 FontWeight.normal),
                             CommonWidget().sizedBox(20.0, 0.0),
                             //!------------------Wholesaler Buttton
-                            CommonWidget().button(Colors.white, Colors.black,
-                                'Retailer / Wholesaler', () {
+                            CommonWidget().button(
+                                whiteColor, blackColor, 'Retailer / Wholesaler',
+                                () {
                               Get.to(() => B2BLoginScreen());
                             }, EdgeInsets.symmetric(vertical: 12), 22.0,
                                 FontWeight.normal),

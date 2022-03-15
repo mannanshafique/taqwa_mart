@@ -172,15 +172,18 @@ class SettingScreen extends StatelessWidget {
                   CircleAvatar(
                     radius: 60,
                     backgroundColor: whiteColor,
-                    // backgroundImage: AssetImage('assets/Images/logo_green.png'),
                     child: Padding(
                       padding: EdgeInsets.all(1),
                       child: CircleAvatar(
-                        radius: 56,
-                        backgroundColor: lightgreenColor,
-                        child: CommonWidget().customText(
-                            'TAQWA', whiteColor, 20.0, FontWeight.bold, 1),
-                      ),
+                          radius: 56,
+                          // backgroundImage:
+                          //     AssetImage('assets/Images/taqwa_logo.png'),
+
+                          backgroundColor: lightgreenColor,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset('assets/Images/taqwa_logo.png'),
+                          )),
                     ),
                   ),
                   SizedBox(
@@ -249,7 +252,7 @@ class LoginAlertDialogue extends StatelessWidget {
                       height: 30,
                     ),
                     ElevatedButton(
-                      style: ElevatedButton.styleFrom(primary: Colors.green),
+                      style: ElevatedButton.styleFrom(primary: greenColor),
                       child: Text(
                         'Log In',
                         style: TextStyle(fontSize: 20),

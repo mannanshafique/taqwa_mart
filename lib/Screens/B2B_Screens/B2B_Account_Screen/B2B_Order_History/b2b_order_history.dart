@@ -79,7 +79,7 @@ class B2BOrderHistory extends StatelessWidget {
     return Card(
       elevation: 1.0,
       margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 15.0),
-      color: orderHistory.cancellAt == '' ? lightgreenColor : lightredColor,
+      color: orderHistory.cancellAt == '' ? lightgreen : lightredColor,
       child: Container(
         color: Colors.transparent,
         padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),

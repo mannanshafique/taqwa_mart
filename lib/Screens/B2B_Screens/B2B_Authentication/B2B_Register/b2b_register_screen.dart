@@ -17,7 +17,7 @@ class B2BRegisterScreen extends StatelessWidget {
 
   // final authController = Get.find<AuthController>();
   final String termsText =
-      'By clicking "Sign up" you are agreeing to Mungwalo\'s';
+      'By clicking "Sign up" you are agreeing to Taqwa Mart';
   final TextEditingController _fullNametextController = TextEditingController();
   final TextEditingController _phonetextController = TextEditingController();
   final TextEditingController _storeNametextController =

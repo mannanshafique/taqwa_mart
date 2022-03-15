@@ -49,7 +49,7 @@ class OrderHistoryScreen extends StatelessWidget {
   }
 
   Widget historyDataContainer({required B2COrderHistory orderHistory}) {
-    //!-------Convert time Then find days & Mintue Differences 
+    //!-------Convert time Then find days & Mintue Differences
     bool isCancelShow;
     var formatHourly = DateFormat('dd-MM-yy h:m');
     var orderCreatedTime = formatHourly.format(orderHistory.createdAt);
@@ -73,7 +73,7 @@ class OrderHistoryScreen extends StatelessWidget {
     return Card(
       elevation: 1.0,
       margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 15.0),
-      color: orderHistory.cancelAt == '' ? lightgreenColor : lightredColor,
+      color: orderHistory.cancelAt == '' ? lightgreen : lightredColor,
       child: Container(
         color: Colors.transparent,
         padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),

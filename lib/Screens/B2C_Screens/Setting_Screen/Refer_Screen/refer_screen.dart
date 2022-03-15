@@ -70,7 +70,7 @@ class ReferScreen extends StatelessWidget {
               child: Column(
                 children: [
                   rowData('assets/Images/Icon_wallet.png',
-                      'Earn Mungalo Credits worth Rs 200 when your referral completes their first order'),
+                      'Earn Credits worth Rs 200 when your referral completes their first order'),
                   CommonWidget().sizedBox(20.0, 0.0),
                   rowData('assets/Images/Icon_coins.png',
                       'Everytime your friends place an order, you win reward points aquivalent to 20% of the reward points they earn'),

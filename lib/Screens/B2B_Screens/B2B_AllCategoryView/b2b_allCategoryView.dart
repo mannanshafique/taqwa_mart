@@ -139,10 +139,10 @@ class B2BAllCategoryView extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
                   child: imagePath == imageStartUrl
-                      ? Image.asset('assets/Images/logo_green.png')
+                      ? Image.asset('assets/Images/taqwa_logo.png')
                       : FadeInImage.assetNetwork(
                           fit: BoxFit.cover,
-                          placeholder: 'assets/Images/logo_green.png',
+                          placeholder: 'assets/Images/taqwa_logo.png',
                           image: imagePath,
                         ),
                 ),

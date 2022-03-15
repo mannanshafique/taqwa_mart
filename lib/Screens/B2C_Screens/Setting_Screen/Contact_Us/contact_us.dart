@@ -40,13 +40,13 @@ class ContactUs extends StatelessWidget {
             flex: 3,
             child: Column(
               children: [
-                detailListtile(Icons.email, 'Email', 'info@mungalo.pk'),
+                detailListtile(Icons.email, 'Email', 'info@'),
                 GestureDetector(
                     onTap: () {
-                      makePhoneCall('tel:+923332918981');
+                      // makePhoneCall('tel:+923332918981');
                     },
                     child: detailListtile(
-                        Icons.phone, 'Mobile no', '0333-2918981')),
+                        Icons.phone, 'Mobile no', '0333-0000000')),
                 // detailListtile(Icons.location_on, 'Address', 'Plot 4/b Karsaz'),
               ],
             ),

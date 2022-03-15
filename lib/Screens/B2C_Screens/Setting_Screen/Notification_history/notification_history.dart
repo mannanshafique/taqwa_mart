@@ -34,8 +34,7 @@ class NotificationHistory extends StatelessWidget {
                     ),
                   )
                 : ListView.builder(
-                    itemCount:
-                        notificationController.notificationList.length,
+                    itemCount: notificationController.notificationList.length,
                     itemBuilder: (context, index) {
                       return Padding(
                         padding: const EdgeInsets.symmetric(
@@ -45,6 +44,7 @@ class NotificationHistory extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
                           child: ListTile(
+                            
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10)),
                             contentPadding:
@@ -53,13 +53,13 @@ class NotificationHistory extends StatelessWidget {
                               backgroundColor: whiteColor,
                               radius: 30.0,
                               backgroundImage:
-                                  AssetImage('assets/Images/logo_green.png'),
+                                  AssetImage('assets/Images/taqwa_logo.png'),
                             ),
-                            tileColor: lightgreenColor,
+                            tileColor: lightgreyColor.withOpacity(0.1),
                             title: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                CommonWidget().customText('Mungalo', blackColor,
+                                CommonWidget().customText('Taqwa', blackColor,
                                     18.0, FontWeight.w600, 1),
                                 CommonWidget().customText(
                                     notificationController
