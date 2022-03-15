@@ -61,7 +61,7 @@ class HomePageController extends GetxController {
 
   getRecommendContainer() async {
     var response = await ProuctUsingCategoryApi()
-        .getProuctUsingCategoryApi(2);
+        .getProuctUsingCategoryApi(51);
     var jsonData = jsonDecode(response.body);
     if (response.statusCode == 200) {
       print(jsonData);

@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -90,7 +92,7 @@ class HomePage extends StatelessWidget {
               CommonWidget().customText(
                   'Shop by Category', blackColor, 22.0, FontWeight.w800, 1),
               GestureDetector(
-                onTap: () {
+                onTap: () async {
                   pushNewScreen(
                     context,
                     screen: BottomNavigation(
@@ -100,7 +102,7 @@ class HomePage extends StatelessWidget {
                     pageTransitionAnimation: PageTransitionAnimation.cupertino,
                   );
 
-                  //  Get.to(() => CategoryDetailScreen());
+                 
                 },
                 child: CommonWidget().customText(
                     'View all', greenColor, 18.0, FontWeight.w400, 1),
@@ -342,7 +344,7 @@ class HomePage extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(15.0),
                     child: Image.network(
-                      'http://165.227.69.207/zkadmin/public/uploads/$imagePath',
+                      '${b2CimageStartUrl + imagePath}',
                       fit: BoxFit.cover,
                     ),
                   )),
@@ -454,7 +456,7 @@ class HomePage extends StatelessWidget {
                   id: homePageCategoryController
                       .productList[index].productAttributes[0].id,
                   imagePath:
-                      'http://165.227.69.207/zkadmin/public/uploads/${homePageController.productList[index].productAttributes[0].image}',
+                      '${b2CimageStartUrl + homePageController.productList[index].productAttributes[0].image}',
                 ));
               }
             }, () {}, () {}, () {}) //!

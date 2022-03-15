@@ -258,7 +258,7 @@ class SubCategoryDetailScreen extends StatelessWidget {
                   id: subCategoryController
                       .productList[index].productAttributes[0].id,
                   imagePath:
-                      'http://165.227.69.207/zkadmin/public/uploads/${subCategoryController.productList[index].productAttributes[0].image}',
+                      '${b2CimageStartUrl+ subCategoryController.productList[index].productAttributes[0].image}',
                 ));
               }
             }, () {}, () {}, () {}) //!
@@ -416,7 +416,7 @@ class SubCategoryDetailScreen extends StatelessWidget {
                     : GestureDetector(
                         onTap: onImageTap,
                         child: Image.network(
-                          'http://165.227.69.207/zkadmin/public/uploads/$imagePath',
+                          '${b2CimageStartUrl+imagePath}',
                           fit: BoxFit.cover,
                         ),
                       ),

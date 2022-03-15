@@ -64,7 +64,7 @@ class CategoryView extends StatelessWidget {
                                     width: 120,
                                     // color: Colors.blue,
                                     child: categoryContainer(
-                                        'http://165.227.69.207/zkadmin/public/uploads/${categoryChild.image}',
+                                        '${b2CimageStartUrl+categoryChild.image}',
                                         categoryChild.name,
                                         category.id.toString(),
                                         context,
@@ -115,7 +115,7 @@ class CategoryView extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
                   child: (imagePath ==
-                          'http://165.227.69.207/zkadmin/public/uploads/')
+                          '$b2CimageStartUrl')
                       ? Image.asset('assets/Images/taqwa_logo.png')
                       : Image.network(
                           imagePath,

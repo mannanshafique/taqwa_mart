@@ -127,8 +127,7 @@ class ProductDetailScreen extends StatelessWidget {
                   },
                   child: Stack(
                     children: [
-                      Image.network(
-                          'http://165.227.69.207/zkadmin/public/uploads/$imagePath'),
+                      Image.network('${b2CimageStartUrl+imagePath}'),
 
                       // !Discount % Shown On Image
                       Positioned(
@@ -251,22 +250,20 @@ class ProductDetailScreen extends StatelessWidget {
       return (!isInCart)
           ? CommonWidget().addToCartContainer(0, () {
               print('Added Product Id$productId');
-              if (stock ==
-                  0) {
+              if (stock == 0) {
                 Get.snackbar('Message', 'Product is Out of Stock');
               } else {
                 cartController.addProduct(CartModel(
-                completeName,
-                1,
-                price.toString(),
-                stock: stock,
-                isInCart: true,
-                id: productId,
-                imagePath:
-                    'http://165.227.69.207/zkadmin/public/uploads/$imagePath',
-              ));
+                  completeName,
+                  1,
+                  price.toString(),
+                  stock: stock,
+                  isInCart: true,
+                  id: productId,
+                  imagePath:
+                      '${b2CimageStartUrl+imagePath}',
+                ));
               }
-              
             }, () {}, () {}, () {}) //!
           : CommonWidget()
               .addToCartContainer(itemListDetail.quantity ?? 1, () {}, () {

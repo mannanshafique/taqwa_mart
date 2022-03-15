@@ -19,7 +19,7 @@ class SearchScreen extends StatelessWidget {
   final searchController = Get.put(SearchController());
   final cartController = Get.find<CartController>();
 
-  final String imagePathForB2C = 'http://165.227.69.207/zkadmin/public/uploads';
+  // final String imagePathForB2C = 'http://165.227.69.207/zkadmin/public/uploads';
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +59,7 @@ class SearchScreen extends StatelessWidget {
                               searchController, index, productDetail),
                       discountPercentage: productDetail.discountPercentage,
                       discountPrice: productDetail.discountPrice,
-                      imagePath: '$imagePathForB2C/${productDetail.image}',
+                      imagePath: '${b2CimageStartUrl+ productDetail.image}',
                       name: searchController.searchProductList[index].name,
                       retailprice: productDetail.price.toString(),
                       size:
@@ -122,7 +122,7 @@ class SearchScreen extends StatelessWidget {
                 id: searchController
                     .searchProductList[index].productAttributes[0].id,
                 imagePath:
-                    '$imagePathForB2C/${searchController.searchProductList[index].productAttributes[0].image}',
+                    '${b2CimageStartUrl + searchController.searchProductList[index].productAttributes[0].image}',
               ));
               }
               
