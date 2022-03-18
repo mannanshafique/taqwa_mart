@@ -579,6 +579,27 @@ class B2BSearch {
   }
 }
 
+
+//!-----------()
+class B2bRbdList{
+  Future postB2bRbdList({required String type,required String maundRate}) async {
+    print('postB2B RbdListing');
+
+    Uri completeUrl = Uri.parse('$b2bBaseUrl/list/rbd');
+Map data = {
+     "type" : type,
+     "maund_rate": maundRate,
+    };
+    final response = await http.post(
+      completeUrl,body: data
+    );
+    if (response.statusCode == 200) {
+      print(response.body);
+    }
+    return response;
+  }
+}
+
 // https://mungalo-b2b.freshchoice.pk/public/api/cancel-order
 //! B2b Cancel Order
 class B2BCancelOrder {

@@ -17,6 +17,7 @@ class LanguageTranslation extends Translations {
           'select_language': 'Select Language',
           'english': 'English',
           'urdu': 'Urdu',
+          'listing': 'List'
         },
         'urd_PK': {
           'homePage': 'ہوم پیج',
@@ -32,6 +33,7 @@ class LanguageTranslation extends Translations {
           'select_language': 'زبان منتخب کریں',
           'english': 'انگلش',
           'urdu': 'اردو',
+          'listing': 'فہرست',
         }
       };
 }

@@ -6,6 +6,7 @@ import 'package:get/instance_manager.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:mangalo_app/Constant/Value/value_constant.dart';
 import 'package:mangalo_app/Screens/B2C_Screens/AllCategoryView/category_view.dart';
+import 'package:mangalo_app/Screens/B2C_Screens/B2C_Listing/b2c_lisitng.dart';
 import 'package:mangalo_app/Screens/B2C_Screens/Cart/cart_screen.dart';
 import 'package:mangalo_app/Screens/B2C_Screens/HomePage/HomePage_Controller/homepage_controller.dart';
 import 'package:mangalo_app/Screens/B2C_Screens/HomePage/homepage.dart';
@@ -79,7 +80,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
         categoryList: homePageController.categoryList,
       ),
       CartScreen(),
-      SearchScreen(),
+      B2CListing(),
       SettingScreen(),
     ];
   }
@@ -107,9 +108,15 @@ class _BottomNavigationState extends State<BottomNavigation> {
         activeColorPrimary: greenColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
+      // PersistentBottomNavBarItem(
+      //   icon: Icon(CupertinoIcons.search),
+      //   title: ("Search"),
+      //   activeColorPrimary: greenColor,
+      //   inactiveColorPrimary: CupertinoColors.systemGrey,
+      // ),
       PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.search),
-        title: ("Search"),
+        icon: Icon(CupertinoIcons.list_bullet),
+        title: ("List"),
         activeColorPrimary: greenColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),

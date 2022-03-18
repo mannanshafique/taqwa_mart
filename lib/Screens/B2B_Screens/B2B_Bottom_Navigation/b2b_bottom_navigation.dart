@@ -11,6 +11,7 @@ import 'package:mangalo_app/Screens/B2B_Screens/B2B_AllCategoryView/b2b_allCateg
 import 'package:mangalo_app/Screens/B2B_Screens/B2B_Cart/b2b_cart_screen.dart';
 import 'package:mangalo_app/Screens/B2B_Screens/B2B_HomePage/b2b_homePage.dart';
 import 'package:mangalo_app/Screens/B2B_Screens/B2B_HomePage/b2b_homePage_controller.dart';
+import 'package:mangalo_app/Screens/B2B_Screens/B2B_Listing/b2b_lisitng.dart';
 import 'package:mangalo_app/Screens/B2B_Screens/B2B_SearchScreen/b2b_search_screen.dart';
 import 'package:mangalo_app/Screens/B2C_Screens/SearchScreen/search_screen.dart';
 
@@ -42,7 +43,8 @@ class _B2BBottomNavigationState extends State<B2BBottomNavigation> {
       B2BHomePage(),
       B2BAllCategoryView(),
       B2BCartScreen(),
-      B2BSearchScreen(),
+      // B2BSearchScreen(),
+      B2BListing(),
       AccountScreen(),
     ];
   }
@@ -71,9 +73,15 @@ class _B2BBottomNavigationState extends State<B2BBottomNavigation> {
         activeColorPrimary: greenColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
+      // PersistentBottomNavBarItem(
+      //   icon: Icon(CupertinoIcons.search),
+      //   title: ("search".tr),
+      //   activeColorPrimary: greenColor,
+      //   inactiveColorPrimary: CupertinoColors.systemGrey,
+      // ),
       PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.search),
-        title: ("search".tr),
+        icon: Icon(CupertinoIcons.list_bullet),
+        title: ("listing".tr),
         activeColorPrimary: greenColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
